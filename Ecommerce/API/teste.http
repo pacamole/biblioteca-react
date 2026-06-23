@@ -1,0 +1,33 @@
+### Teste para a raiz da API
+GET http://localhost:5273
+
+### Listar produtos
+GET http://localhost:5273/api/produto/listar
+
+### Buscar produto
+GET http://localhost:5273/api/produto/buscar/d77a4814-a20b-441a-be93-e2c0aebf2e59
+
+### Cadastrar produto
+POST http://localhost:5273/api/produto/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Mouse 1111",
+    "preco" : 7.5,
+    "quantidade" : 270
+}
+
+### Deletar produto
+DELETE http://localhost:5273/api/produto/deletar/f602db7d-5eec-45d9-8bef-ba4f830cab9e
+
+### Alterar produto
+PUT http://localhost:5273/api/produto/alterar
+Content-Type: application/json
+
+{
+    "id": "79239f2f-a0df-4184-aace-6a61be38ff9d",
+    "nome" : "Teclado Alterado",
+    "preco" : 7.5,
+    "quantidade" : 1234
+
+}
